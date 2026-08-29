@@ -22,7 +22,6 @@
       --shadow: 0 16px 44px rgba(47, 55, 105, .12);
       --radius: 22px;
     }
-
     * { box-sizing: border-box; }
     html { scroll-behavior: smooth; }
     body {
@@ -37,7 +36,6 @@
     button, input, select { font: inherit; }
     button { cursor: pointer; }
     :focus-visible { outline: 3px solid rgba(101, 87, 245, .35); outline-offset: 3px; }
-
     .app-shell { max-width: 1250px; margin: 0 auto; padding: 22px 22px 52px; }
     .topbar {
       display: flex; align-items: center; justify-content: space-between; gap: 18px;
@@ -51,7 +49,6 @@
     }
     .brand small { display: block; color: var(--muted); font-size: 11px; letter-spacing: .06em; text-transform: uppercase; }
     .top-actions { display: flex; align-items: center; gap: 10px; }
-
     .btn {
       border: 0; border-radius: 13px; padding: 11px 16px; font-weight: 800;
       transition: transform .18s ease, box-shadow .18s ease, background .18s ease;
@@ -62,7 +59,6 @@
     .btn-quiet { color: var(--primary-dark); background: #eeedff; }
     .btn-white { color: var(--ink); background: white; border: 1px solid var(--line); }
     .btn-small { padding: 8px 11px; font-size: 13px; }
-
     .hero {
       display: grid; grid-template-columns: 1.12fr .88fr; gap: 25px; align-items: stretch;
       padding: 36px; color: white; overflow: hidden; position: relative; border-radius: 30px;
@@ -84,13 +80,11 @@
     .hero-art { display: grid; place-items: center; min-height: 235px; }
     .hero-cube { width: min(310px, 90%); filter: drop-shadow(0 22px 16px rgba(24, 18, 92, .25)); animation: float 5s ease-in-out infinite; }
     @keyframes float { 0%,100% { transform: translateY(4px) rotate(-2deg); } 50% { transform: translateY(-7px) rotate(2deg); } }
-
     .section { margin-top: 25px; }
     .section-heading { display: flex; align-items: end; justify-content: space-between; gap: 14px; margin-bottom: 14px; }
     .section-heading h2 { margin: 0; font-size: 25px; letter-spacing: -.04em; }
     .section-heading p { margin: 3px 0 0; color: var(--muted); }
     .card { border: 1px solid rgba(228,233,245,.9); border-radius: var(--radius); background: var(--card); box-shadow: 0 8px 25px rgba(47,55,105,.05); }
-
     .concept-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
     .concept-card { padding: 20px; min-height: 155px; }
     .concept-icon { width: 39px; height: 39px; display: grid; place-items: center; margin-bottom: 14px; border-radius: 12px; font-size: 20px; }
@@ -99,7 +93,6 @@
     .concept-card:nth-child(3) .concept-icon { color: #b36813; background: #fff0d9; }
     .concept-card h3 { margin-bottom: 6px; font-size: 17px; }
     .concept-card p { margin: 0; color: var(--muted); font-size: 14px; }
-
     .sim-layout { display: grid; grid-template-columns: 360px 1fr; gap: 18px; align-items: start; }
     .controls { padding: 22px; position: sticky; top: 14px; }
     .controls h3 { margin-bottom: 4px; }
@@ -123,7 +116,6 @@
     .quick-values { display: flex; gap: 7px; flex-wrap: wrap; margin-top: 17px; padding-top: 16px; border-top: 1px solid var(--line); }
     .quick-values .btn { padding: 7px 10px; color: var(--muted); background: #f3f5fb; font-size: 12px; }
     .quick-values .btn:hover { color: var(--primary-dark); background: #eeedff; }
-
     .visual-column { display: grid; gap: 18px; }
     .visual-card { min-height: 408px; padding: 16px; position: relative; overflow: hidden; background: linear-gradient(145deg, #fcfdff, #f4f5ff); }
     .visual-toolbar { display: flex; justify-content: space-between; align-items: center; gap: 10px; padding: 3px 5px 0; }
@@ -132,7 +124,6 @@
     #prismSvg { width: 100%; height: 345px; display: block; }
     .svg-label { font: 800 14px Inter, sans-serif; fill: var(--ink); }
     .svg-measure { font: 800 13px Inter, sans-serif; fill: var(--primary-dark); }
-
     .metrics { display: grid; grid-template-columns: repeat(4, 1fr); gap: 11px; }
     .metric { padding: 16px; border-radius: 17px; background: white; border: 1px solid var(--line); }
     .metric-label { color: var(--muted); font-size: 12px; font-weight: 700; }
@@ -141,7 +132,6 @@
     .metric:nth-child(2) .metric-value { color: var(--teal); }
     .metric:nth-child(3) .metric-value { color: var(--orange); }
     .metric:nth-child(4) .metric-value { color: var(--pink); }
-
     .lower-grid { display: grid; grid-template-columns: 1.1fr .9fr; gap: 18px; }
     .net-card, .formula-card { padding: 22px; }
     .card-title { display: flex; justify-content: space-between; align-items: center; gap: 10px; margin-bottom: 13px; }
@@ -153,7 +143,6 @@
     .formula-name { color: var(--muted); font-size: 12px; font-weight: 800; }
     .formula-line { margin-top: 3px; font-size: 16px; font-weight: 900; }
     .formula-sub { color: var(--muted); font-size: 12px; }
-
     .example-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
     .example { padding: 19px; position: relative; }
     .example-number { width: 28px; height: 28px; display: grid; place-items: center; margin-bottom: 12px; border-radius: 9px; color: white; background: var(--pink); font-weight: 900; }
@@ -163,7 +152,6 @@
     .example p { min-height: 65px; margin-bottom: 13px; color: var(--muted); font-size: 14px; }
     .example-answer { padding-top: 12px; border-top: 1px dashed var(--line); font-size: 14px; }
     .example-answer strong { color: var(--primary-dark); }
-
     .practice-card { padding: 25px; color: white; background: linear-gradient(120deg, #17213b, #26355b); }
     .practice-head { display: flex; justify-content: space-between; align-items: start; gap: 16px; }
     .practice-head h2 { margin-bottom: 5px; color: white; }
@@ -179,7 +167,6 @@
     .feedback { min-height: 24px; margin: 13px 0 0; font-size: 14px; font-weight: 800; }
     .feedback.good { color: var(--green); }
     .feedback.bad { color: var(--danger); }
-
     .progress-card { display: flex; align-items: center; gap: 18px; padding: 19px 22px; }
     .score-orb { flex: 0 0 auto; width: 66px; height: 66px; display: grid; place-items: center; border-radius: 50%; color: white; background: linear-gradient(135deg, var(--primary), var(--pink)); font-size: 20px; font-weight: 900; }
     .progress-info { flex: 1; }
@@ -190,9 +177,7 @@
     .badge-list { display: flex; gap: 8px; }
     .badge { width: 39px; height: 39px; display: grid; place-items: center; border-radius: 12px; color: #aab1c7; background: #f0f2f8; filter: grayscale(1); opacity: .52; transition: all .3s ease; }
     .badge.unlocked { color: #ad650e; background: #fff0d6; filter: none; opacity: 1; transform: scale(1.08); }
-
     .footer { padding-top: 25px; color: var(--muted); text-align: center; font-size: 12px; }
-
     /* ---------- Ventana emergente ---------- */
     .modal-backdrop { position: fixed; inset: 0; display: none; place-items: center; padding: 18px; background: rgba(18, 23, 48, .55); z-index: 5; }
     .modal-backdrop.open { display: grid; }
@@ -201,7 +186,6 @@
     .modal h2 { margin-bottom: 8px; }
     .modal p { color: var(--muted); }
     .modal-actions { display: flex; justify-content: end; gap: 8px; margin-top: 18px; }
-
     @media (max-width: 920px) {
       .hero, .sim-layout, .lower-grid { grid-template-columns: 1fr; }
       .controls { position: static; }
@@ -242,7 +226,6 @@
         <button class="btn btn-white btn-small" id="resetBtn">↻ Reiniciar</button>
       </div>
     </header>
-
     <!-- Pantalla de bienvenida -->
     <section class="hero" aria-labelledby="welcomeTitle">
       <div class="hero-copy">
@@ -265,7 +248,6 @@
         </svg>
       </div>
     </section>
-
     <!-- Explicación breve -->
     <section class="section" aria-labelledby="conceptTitle">
       <div class="section-heading">
@@ -289,7 +271,6 @@
         </article>
       </div>
     </section>
-
     <!-- Zona de simulación y controles dinámicos -->
     <section class="section" aria-labelledby="simulationTitle">
       <div class="section-heading">
@@ -298,19 +279,26 @@
       <div class="sim-layout">
         <aside class="card controls" aria-label="Controles de dimensiones">
           <h3>Dimensiones</h3>
-          <p class="controls-intro">Usa los deslizadores o escribe un valor entre 1 y 12.</p>
-
-          <div class="control-row">
-            <div class="control-label"><label for="lengthRange">Largo <span>l</span></label><span id="lengthHint">cm</span></div>
-            <div class="range-line"><input id="lengthRange" type="range" min="1" max="12" step=".5" value="6" aria-label="Largo del prisma" /><input id="lengthNumber" class="number-input" type="number" min="1" max="12" step=".5" value="6" aria-label="Largo numérico" /></div>
+          <p class="controls-intro" id="controlsDescription">Usa los deslizadores o escribe un valor entre 1 y 12.</p>
+          <div class="control-row" style="margin-top:0;">
+            <div class="control-label"><label for="prismType">Tipo de prisma</label><span>elige una base</span></div>
+            <select id="prismType" aria-label="Tipo de prisma">
+              <option value="rectangular">Prisma rectangular</option>
+              <option value="triangular">Prisma triangular</option>
+              <option value="pentagonal">Prisma pentagonal regular</option>
+            </select>
           </div>
           <div class="control-row">
-            <div class="control-label"><label for="widthRange">Ancho <span>a</span></label><span>cm</span></div>
-            <div class="range-line"><input id="widthRange" type="range" min="1" max="12" step=".5" value="4" aria-label="Ancho del prisma" /><input id="widthNumber" class="number-input" type="number" min="1" max="12" step=".5" value="4" aria-label="Ancho numérico" /></div>
+            <div class="control-label"><label for="lengthRange"><span id="lengthLabelText">Largo</span> <span id="lengthSymbol">l</span></label><span id="lengthHint">cm</span></div>
+            <div class="range-line"><input id="lengthRange" type="range" min="1" max="12" step=".5" value="6" aria-label="Primera dimensión del prisma" /><input id="lengthNumber" class="number-input" type="number" min="1" max="12" step=".5" value="6" aria-label="Primera dimensión numérica" /></div>
           </div>
           <div class="control-row">
-            <div class="control-label"><label for="heightRange">Altura <span>h</span></label><span>cm</span></div>
-            <div class="range-line"><input id="heightRange" type="range" min="1" max="12" step=".5" value="5" aria-label="Altura del prisma" /><input id="heightNumber" class="number-input" type="number" min="1" max="12" step=".5" value="5" aria-label="Altura numérica" /></div>
+            <div class="control-label"><label for="widthRange"><span id="widthLabelText">Ancho</span> <span id="widthSymbol">a</span></label><span>cm</span></div>
+            <div class="range-line"><input id="widthRange" type="range" min="1" max="12" step=".5" value="4" aria-label="Segunda dimensión del prisma" /><input id="widthNumber" class="number-input" type="number" min="1" max="12" step=".5" value="4" aria-label="Segunda dimensión numérica" /></div>
+          </div>
+          <div class="control-row">
+            <div class="control-label"><label for="heightRange"><span id="heightLabelText">Altura</span> <span id="heightSymbol">h</span></label><span>cm</span></div>
+            <div class="range-line"><input id="heightRange" type="range" min="1" max="12" step=".5" value="5" aria-label="Tercera dimensión del prisma" /><input id="heightNumber" class="number-input" type="number" min="1" max="12" step=".5" value="5" aria-label="Tercera dimensión numérica" /></div>
           </div>
           <div class="quick-values" aria-label="Tamaños rápidos">
             <span style="width:100%; color:var(--muted); font-size:12px; font-weight:800;">Probar medidas:</span>
@@ -319,7 +307,6 @@
             <button class="btn" data-preset="10,7,8">Grande</button>
           </div>
         </aside>
-
         <div class="visual-column">
           <div class="card visual-card">
             <div class="visual-toolbar"><strong>Vista pseudo 3D</strong><span id="dimensionCaption">6 × 4 × 5 cm</span></div>
@@ -350,16 +337,15 @@
             <div class="metric"><div class="metric-label">Área de la base</div><div class="metric-value" id="baseAreaValue">24 cm²</div></div>
             <div class="metric"><div class="metric-label">Volumen</div><div class="metric-value" id="volumeValue">120 cm³</div></div>
             <div class="metric"><div class="metric-label">Área total</div><div class="metric-value" id="surfaceValue">148 cm²</div></div>
-            <div class="metric"><div class="metric-label">Diagonal</div><div class="metric-value" id="diagonalValue">8.77 cm</div></div>
+            <div class="metric"><div class="metric-label" id="diagonalLabel">Diagonal</div><div class="metric-value" id="diagonalValue">8.77 cm</div></div>
           </div>
         </div>
       </div>
     </section>
-
     <!-- Visualización de desarrollo plano y fórmulas -->
     <section class="section lower-grid" aria-label="Desarrollo plano y fórmulas">
       <article class="card net-card">
-        <div class="card-title"><h3>Desarrollo plano</h3><span class="pill">▣ 6 caras</span></div>
+        <div class="card-title"><h3>Desarrollo plano</h3><span class="pill" id="faceCount">▣ 6 caras</span></div>
         <p style="color:var(--muted);font-size:13px;">Así se verían todas las caras del prisma extendidas.</p>
         <svg id="netSvg" viewBox="0 0 600 215" role="img" aria-label="Desarrollo plano del prisma">
           <g id="netGroup" stroke="#fff" stroke-width="3" stroke-linejoin="round"></g>
@@ -373,7 +359,6 @@
         <div class="formula-box"><div class="formula-name">Área total</div><div class="formula-line" id="formulaSurface">A<sub>t</sub> = 2(6×4 + 6×5 + 4×5)</div><div class="formula-sub" id="formulaSurfaceResult">= 148 cm²</div></div>
       </article>
     </section>
-
     <!-- Ejemplos guiados -->
     <section class="section" aria-labelledby="examplesTitle">
       <div class="section-heading"><div><h2 id="examplesTitle">Ejemplos guiados</h2><p>Conecta las fórmulas con situaciones del día a día.</p></div></div>
@@ -395,7 +380,6 @@
         </article>
       </div>
     </section>
-
     <!-- Actividad práctica y retroalimentación -->
     <section class="section card practice-card" aria-labelledby="practiceTitle">
       <div class="practice-head">
@@ -413,7 +397,6 @@
         <div class="feedback" id="feedback" aria-live="polite"></div>
       </div>
     </section>
-
     <!-- Sistema de puntuación e insignias -->
     <section class="section card progress-card">
       <div class="score-orb" id="scoreValue">0</div>
@@ -428,10 +411,8 @@
         <div class="badge" id="badge3" title="Arquitecto: 150 puntos">🏆</div>
       </div>
     </section>
-
     <footer class="footer">PrismaLab · Aprende haciendo · Todos los cálculos se realizan en tu navegador.</footer>
   </main>
-
   <!-- Ventana emergente educativa -->
   <div class="modal-backdrop" id="modalBackdrop" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
     <div class="modal">
@@ -440,14 +421,59 @@
       <div class="modal-actions"><button class="btn btn-primary" id="closeModal">Entendido</button></div>
     </div>
   </div>
-
   <script>
     /* ---------- Estado y utilidades ---------- */
-    const state = { length: 6, width: 4, height: 5, score: 0, challenge: null };
+    const state = { prismType: "rectangular", length: 6, width: 4, height: 5, score: 0, challenge: null };
     const $ = (id) => document.getElementById(id);
     const fmt = (n) => Number.isInteger(n) ? String(n) : n.toFixed(2).replace(/\.?0+$/, "");
     const clamp = (n, min, max) => Math.min(max, Math.max(min, n));
-
+    // Cada opción conserva tres controles, pero cambia el significado de cada medida.
+    const prismInfo = {
+      rectangular: {
+        name: "Prisma rectangular", faces: "6 caras", defaults: [6, 4, 5],
+        labels: ["Largo", "Ancho", "Altura"], symbols: ["l", "a", "h"]
+      },
+      triangular: {
+        name: "Prisma triangular", faces: "5 caras", defaults: [6, 4, 5],
+        labels: ["Base del triángulo", "Altura del triángulo", "Longitud del prisma"], symbols: ["b", "hᵦ", "H"]
+      },
+      pentagonal: {
+        name: "Prisma pentagonal regular", faces: "7 caras", defaults: [4, 3, 6],
+        labels: ["Lado del pentágono", "Apotema", "Altura del prisma"], symbols: ["s", "a", "H"]
+      }
+    };
+    function calculateGeometry(l, w, h, prismType = state.prismType) {
+      if (prismType === "triangular") {
+        const base = l * w / 2;
+        const slopingSide = Math.sqrt((l / 2) ** 2 + w ** 2);
+        const perimeter = l + 2 * slopingSide;
+        return { base, volume: base * h, surface: 2 * base + perimeter * h, diagonal: slopingSide, unitLabel: "Lado inclinado", geometry: "triangular" };
+      }
+      if (prismType === "pentagonal") {
+        const base = 5 * l * w / 2;
+        const perimeter = 5 * l;
+        return { base, volume: base * h, surface: 2 * base + perimeter * h, diagonal: Math.sqrt((l / 2) ** 2 + h ** 2), unitLabel: "Arista lateral", geometry: "pentagonal" };
+      }
+      return { base: l * w, volume: l * w * h, surface: 2 * (l * w + l * h + w * h), diagonal: Math.sqrt(l * l + w * w + h * h), unitLabel: "Diagonal", geometry: "rectangular" };
+    }
+    // Cambia etiquetas y valores iniciales cuando se elige otra clase de prisma.
+    function updateTypeUI() {
+      const info = prismInfo[state.prismType];
+      ["length", "width", "height"].forEach((name, index) => {
+        $(`${name}Range`).setAttribute("aria-label", info.labels[index]);
+        $(`${name}Number`).setAttribute("aria-label", `${info.labels[index]} numérico`);
+        $(`${name}LabelText`).textContent = info.labels[index];
+        $(`${name}Symbol`).textContent = info.symbols[index];
+      });
+      $("solidLabel").textContent = info.name;
+      $("faceCount").textContent = `▣ ${info.faces}`;
+      $("diagonalLabel").textContent = state.prismType === "rectangular" ? "Diagonal" : state.prismType === "triangular" ? "Lado inclinado" : "Arista lateral";
+      $("controlsDescription").textContent = state.prismType === "triangular"
+        ? "Base y altura del triángulo forman la base; la tercera medida es la longitud del prisma."
+        : state.prismType === "pentagonal"
+          ? "Ajusta el lado y la apotema de la base regular, más la altura del prisma."
+          : "Usa los deslizadores o escribe un valor entre 1 y 12.";
+    }
     // Actualiza una pareja de controles (slider + campo numérico).
     function bindDimension(name) {
       const range = $(`${name}Range`);
@@ -466,19 +492,56 @@
       range.addEventListener("input", () => update(range));
       number.addEventListener("input", () => update(number));
     }
-
-    // Dibuja el prisma con caras proporcionales y etiquetas de medida.
+    // Dibuja una vista pseudo 3D distinta para cada tipo de prisma.
     function renderPrism() {
       const l = state.length, w = state.width, h = state.height;
-      const depth = 31 + w * 2.6;
-      const width = 190 + l * 17;
-      const height = 92 + h * 11;
-      const x = 360 - width / 2;
-      const y = 110;
-      const dx = depth * .85, dy = -depth * .46;
-      const front = `${x},${y} ${x + width},${y} ${x + width},${y + height} ${x},${y + height}`;
-      const top = `${x},${y} ${x + dx},${y + dy} ${x + width + dx},${y + dy} ${x + width},${y}`;
-      const side = `${x + width},${y} ${x + width + dx},${y + dy} ${x + width + dx},${y + height + dy} ${x + width},${y + height}`;
+      let x = 270, y = 105, width = 220, height = 145, dx = 60, dy = -34, front, top, side;
+      if (state.prismType === "triangular") {
+        width = 145 + l * 10; height = 82 + w * 10; dx = 28 + h * 4; dy = -dx * .55;
+        x = 300 - width / 2; y = 105;
+        const a = `${x},${y + height}`, b = `${x + width},${y + height}`, c = `${x + width / 2},${y}`;
+        const e = (p) => { const [px, py] = p.split(",").map(Number); return `${px + dx},${py + dy}`; };
+        front = `${a} ${b} ${c}`;
+        top = `${c} ${b} ${e(b)} ${e(c)}`;
+        side = `${b} ${a} ${e(a)} ${e(b)}`;
+        $("lengthMeasure").setAttribute("d", `M${x},${y + height + 14} V${y + height + 27} H${x + width} V${y + height + 14}`);
+        $("widthMeasure").setAttribute("d", `M${x + width / 2},${y - 7} V${y + height + 3}`);
+        $("heightMeasure").setAttribute("d", `M${x + width + 10},${y + height - 3} l${dx},${dy}`);
+        $("lengthLabel").setAttribute("x", x + width / 2); $("lengthLabel").setAttribute("y", y + height + 47); $("lengthLabel").textContent = `b = ${fmt(l)} cm`;
+        $("widthLabel").setAttribute("x", x + width / 2 + 25); $("widthLabel").setAttribute("y", y + height / 2); $("widthLabel").textContent = `hᵦ = ${fmt(w)} cm`;
+        $("heightLabel").setAttribute("x", x + width + dx / 2 + 28); $("heightLabel").setAttribute("y", y + height / 2 + dy / 2 - 4); $("heightLabel").textContent = `H = ${fmt(h)} cm`;
+      } else if (state.prismType === "pentagonal") {
+        width = 170 + l * 12; height = 120 + w * 8; dx = 26 + h * 3.3; dy = -dx * .5;
+        x = 300 - width / 2; y = 102;
+        const cx = x + width / 2, cy = y + height / 2 + 8, radiusX = width / 2, radiusY = height / 2;
+        const pentagon = Array.from({ length: 5 }, (_, i) => {
+          const angle = -Math.PI / 2 + i * 2 * Math.PI / 5;
+          return `${cx + radiusX * Math.cos(angle)},${cy + radiusY * Math.sin(angle)}`;
+        });
+        const extrude = (point) => { const [px, py] = point.split(",").map(Number); return `${px + dx},${py + dy}`; };
+        front = pentagon.join(" ");
+        top = `${pentagon[0]} ${pentagon[1]} ${extrude(pentagon[1])} ${extrude(pentagon[0])}`;
+        side = `${pentagon[1]} ${pentagon[2]} ${extrude(pentagon[2])} ${extrude(pentagon[1])}`;
+        $("lengthMeasure").setAttribute("d", `M${cx - 35},${cy - radiusY - 18} H${cx + 35}`);
+        $("widthMeasure").setAttribute("d", `M${cx},${cy} V${cy - radiusY}`);
+        $("heightMeasure").setAttribute("d", `M${cx + radiusX + 5},${cy} l${dx},${dy}`);
+        $("lengthLabel").setAttribute("x", cx); $("lengthLabel").setAttribute("y", cy - radiusY - 27); $("lengthLabel").textContent = `s = ${fmt(l)} cm`;
+        $("widthLabel").setAttribute("x", cx + 25); $("widthLabel").setAttribute("y", cy - radiusY / 2); $("widthLabel").textContent = `a = ${fmt(w)} cm`;
+        $("heightLabel").setAttribute("x", cx + radiusX + dx / 2 + 20); $("heightLabel").setAttribute("y", cy + dy / 2); $("heightLabel").textContent = `H = ${fmt(h)} cm`;
+      } else {
+        const depth = 31 + w * 2.6;
+        width = 190 + l * 17; height = 92 + h * 11; x = 360 - width / 2; y = 110;
+        dx = depth * .85; dy = -depth * .46;
+        front = `${x},${y} ${x + width},${y} ${x + width},${y + height} ${x},${y + height}`;
+        top = `${x},${y} ${x + dx},${y + dy} ${x + width + dx},${y + dy} ${x + width},${y}`;
+        side = `${x + width},${y} ${x + width + dx},${y + dy} ${x + width + dx},${y + height + dy} ${x + width},${y + height}`;
+        $("lengthMeasure").setAttribute("d", `M${x},${y + height + 18} V${y + height + 31} H${x + width} V${y + height + 18}`);
+        $("widthMeasure").setAttribute("d", `M${x + width + 11},${y - 3} l${dx},${dy} M${x + width + 5},${y - 9} l${dx},${dy}`);
+        $("heightMeasure").setAttribute("d", `M${x - 19},${y} H${x - 32} V${y + height} H${x - 19}`);
+        $("lengthLabel").setAttribute("x", x + width / 2); $("lengthLabel").setAttribute("y", y + height + 51); $("lengthLabel").textContent = `l = ${fmt(l)} cm`;
+        $("widthLabel").setAttribute("x", x + width + dx / 2 + 19); $("widthLabel").setAttribute("y", y + dy / 2 - 4); $("widthLabel").textContent = `a = ${fmt(w)} cm`;
+        $("heightLabel").setAttribute("x", x - 47); $("heightLabel").setAttribute("y", y + height / 2 + 5); $("heightLabel").textContent = `h = ${fmt(h)} cm`;
+      }
       $("prismFront").setAttribute("points", front);
       $("prismTop").setAttribute("points", top);
       $("prismSide").setAttribute("points", side);
@@ -488,50 +551,79 @@
       $("shadowEllipse").setAttribute("cy", y + height + 23);
       $("shadowEllipse").setAttribute("rx", Math.max(115, width * .57));
       $("shadowEllipse").setAttribute("ry", 15 + w * .8);
-
-      $("lengthMeasure").setAttribute("d", `M${x},${y + height + 18} V${y + height + 31} H${x + width} V${y + height + 18}`);
-      $("widthMeasure").setAttribute("d", `M${x + width + 11},${y - 3} l${dx},${dy} M${x + width + 5},${y - 9} l${dx},${dy}`);
-      $("heightMeasure").setAttribute("d", `M${x - 19},${y} H${x - 32} V${y + height} H${x - 19}`);
-      $("lengthLabel").setAttribute("x", x + width / 2); $("lengthLabel").setAttribute("y", y + height + 51); $("lengthLabel").textContent = `l = ${fmt(l)} cm`;
-      $("widthLabel").setAttribute("x", x + width + dx / 2 + 19); $("widthLabel").setAttribute("y", y + dy / 2 - 4); $("widthLabel").textContent = `a = ${fmt(w)} cm`;
-      $("heightLabel").setAttribute("x", x - 47); $("heightLabel").setAttribute("y", y + height / 2 + 5); $("heightLabel").textContent = `h = ${fmt(h)} cm`;
     }
-
-    // Dibuja el desarrollo plano con seis rectángulos a escala.
+    // Dibuja un desarrollo plano específico: 2 bases y una cara lateral por lado.
     function renderNet() {
       const l = state.length, w = state.width, h = state.height;
-      const unit = Math.min(20, 125 / Math.max(l, w, h));
-      const bw = l * unit, bh = w * unit, sh = h * unit;
-      const cx = 300, cy = 108;
-      const faces = [
-        { x: cx - bw / 2, y: cy - bh / 2, width: bw, height: bh, color: "#8278ff", label: "base" },
-        { x: cx - bw / 2, y: cy - bh / 2 - sh, width: bw, height: sh, color: "#aaa4ff", label: "lado" },
-        { x: cx - bw / 2, y: cy + bh / 2, width: bw, height: sh, color: "#aaa4ff", label: "lado" },
-        { x: cx - bw / 2 - sh, y: cy - bh / 2, width: sh, height: bh, color: "#6358df", label: "lado" },
-        { x: cx + bw / 2, y: cy - bh / 2, width: sh, height: bh, color: "#6358df", label: "lado" },
-        { x: cx - bw / 2, y: cy + bh / 2 + sh, width: bw, height: bh, color: "#8278ff", label: "base" }
-      ];
-      $("netGroup").innerHTML = faces.map(f => `<rect x="${f.x}" y="${f.y}" width="${f.width}" height="${f.height}" rx="3" fill="${f.color}"/>`).join("");
-      $("netLabels").innerHTML = faces.map(f => `<text x="${f.x + f.width / 2}" y="${f.y + f.height / 2 + 4}">${f.label}</text>`).join("");
+      const unit = Math.min(17, 105 / Math.max(l, w, h));
+      const group = [], labels = [];
+      const rect = (x, y, width, height, color, label) => {
+        group.push(`<rect x="${x}" y="${y}" width="${width}" height="${height}" rx="3" fill="${color}"/>`);
+        labels.push(`<text x="${x + width / 2}" y="${y + height / 2 + 4}">${label}</text>`);
+      };
+      if (state.prismType === "rectangular") {
+        const bw = l * unit, bh = w * unit, sh = h * unit, cx = 300, cy = 108;
+        rect(cx - bw / 2, cy - bh / 2, bw, bh, "#8278ff", "base");
+        rect(cx - bw / 2, cy - bh / 2 - sh, bw, sh, "#aaa4ff", "lado");
+        rect(cx - bw / 2, cy + bh / 2, bw, sh, "#aaa4ff", "lado");
+        rect(cx - bw / 2 - sh, cy - bh / 2, sh, bh, "#6358df", "lado");
+        rect(cx + bw / 2, cy - bh / 2, sh, bh, "#6358df", "lado");
+        rect(cx - bw / 2, cy + bh / 2 + sh, bw, bh, "#8278ff", "base");
+      } else if (state.prismType === "triangular") {
+        const bw = Math.min(125, 35 + l * 10), bh = Math.min(65, 22 + w * 6), side = Math.min(78, 22 + h * 5), x = 300 - bw / 2, y = 103;
+        const tri = `${300},${y - bh / 2} ${300 - bw / 2},${y + bh / 2} ${300 + bw / 2},${y + bh / 2}`;
+        group.push(`<polygon points="${tri}" fill="#8278ff"/>`);
+        labels.push(`<text x="300" y="${y + 4}">base</text>`);
+        group.push(`<polygon points="${300 - bw / 2},${y - bh / 2} ${300},${y - bh / 2} ${300},${y - bh / 2 - side} ${300 - bw / 2},${y - bh / 2 - side}" fill="#aaa4ff"/>`);
+        group.push(`<polygon points="${300 + bw / 2},${y + bh / 2} ${300 - bw / 2},${y + bh / 2} ${300 - bw / 2},${y + bh / 2 + side} ${300 + bw / 2},${y + bh / 2 + side}" fill="#aaa4ff"/>`);
+        group.push(`<polygon points="${300},${y - bh / 2} ${300 + bw / 2},${y + bh / 2} ${300 + bw / 2},${y + bh / 2 + side} ${300},${y - bh / 2 + side}" fill="#6358df"/>`);
+        labels.push(`<text x="${300 - bw / 4}" y="${y - bh / 2 - side / 2 + 4}">lado</text>`);
+        labels.push(`<text x="300" y="${y + bh / 2 + side / 2 + 4}">lado</text>`);
+        labels.push(`<text x="${300 + bw / 4}" y="${y + side / 2 + 4}">lado</text>`);
+        group.push(`<polygon points="${tri.replaceAll(",", ",").split(" ").map(point => { const [px, py] = point.split(","); return `${px},${Number(py) + side * 1.35}`; }).join(" ")}" fill="#8278ff"/>`);
+        labels.push(`<text x="300" y="${y + side * 1.35 + 4}">base</text>`);
+      } else {
+        const radius = Math.min(45, 18 + l * 5), side = Math.min(66, 22 + h * 5), cx = 300, cy = 100;
+        const polygon = (centerY) => Array.from({ length: 5 }, (_, i) => {
+          const a = -Math.PI / 2 + i * 2 * Math.PI / 5;
+          return `${cx + radius * Math.cos(a)},${centerY + radius * Math.sin(a)}`;
+        }).join(" ");
+        group.push(`<polygon points="${polygon(cy)}" fill="#8278ff"/>`, `<polygon points="${polygon(cy + 105)}" fill="#8278ff"/>`);
+        labels.push(`<text x="${cx}" y="${cy + 4}">base</text>`, `<text x="${cx}" y="${cy + 109}">base</text>`);
+        for (let i = 0; i < 5; i++) {
+          const x = 105 + i * 78;
+          rect(x, 45, 73, side, i % 2 ? "#6358df" : "#aaa4ff", "lado");
+        }
+      }
+      $("netGroup").innerHTML = group.join("");
+      $("netLabels").innerHTML = labels.join("");
     }
-
     // Calcula y muestra todas las magnitudes derivadas.
     function render() {
       const { length: l, width: w, height: h } = state;
-      const base = l * w, volume = base * h, surface = 2 * (l * w + l * h + w * h);
-      const diagonal = Math.sqrt(l * l + w * w + h * h);
+      const result = calculateGeometry(l, w, h);
       $("dimensionCaption").textContent = `${fmt(l)} × ${fmt(w)} × ${fmt(h)} cm`;
-      $("baseAreaValue").textContent = `${fmt(base)} cm²`;
-      $("volumeValue").textContent = `${fmt(volume)} cm³`;
-      $("surfaceValue").textContent = `${fmt(surface)} cm²`;
-      $("diagonalValue").textContent = `${fmt(diagonal)} cm`;
-      $("formulaBase").innerHTML = `A<sub>b</sub> = ${fmt(l)} × ${fmt(w)} = ${fmt(base)} cm²`;
-      $("formulaVolume").innerHTML = `V = A<sub>b</sub> × h = ${fmt(base)} × ${fmt(h)} = ${fmt(volume)} cm³`;
-      $("formulaSurface").innerHTML = `A<sub>t</sub> = 2(${fmt(l)}×${fmt(w)} + ${fmt(l)}×${fmt(h)} + ${fmt(w)}×${fmt(h)})`;
-      $("formulaSurfaceResult").textContent = `= ${fmt(surface)} cm²`;
+      $("baseAreaValue").textContent = `${fmt(result.base)} cm²`;
+      $("volumeValue").textContent = `${fmt(result.volume)} cm³`;
+      $("surfaceValue").textContent = `${fmt(result.surface)} cm²`;
+      $("diagonalLabel").textContent = result.unitLabel;
+      $("diagonalValue").textContent = `${fmt(result.diagonal)} cm`;
+      if (state.prismType === "triangular") {
+        $("formulaBase").innerHTML = `A<sub>b</sub> = (b × hᵦ) / 2 = (${fmt(l)} × ${fmt(w)}) / 2 = ${fmt(result.base)} cm²`;
+        $("formulaVolume").innerHTML = `V = A<sub>b</sub> × H = ${fmt(result.base)} × ${fmt(h)} = ${fmt(result.volume)} cm³`;
+        $("formulaSurface").innerHTML = `A<sub>t</sub> = 2A<sub>b</sub> + P<sub>b</sub>×H`;
+      } else if (state.prismType === "pentagonal") {
+        $("formulaBase").innerHTML = `A<sub>b</sub> = (5 × s × a) / 2 = (5 × ${fmt(l)} × ${fmt(w)}) / 2 = ${fmt(result.base)} cm²`;
+        $("formulaVolume").innerHTML = `V = A<sub>b</sub> × H = ${fmt(result.base)} × ${fmt(h)} = ${fmt(result.volume)} cm³`;
+        $("formulaSurface").innerHTML = `A<sub>t</sub> = 2A<sub>b</sub> + (5s)×H`;
+      } else {
+        $("formulaBase").innerHTML = `A<sub>b</sub> = ${fmt(l)} × ${fmt(w)} = ${fmt(result.base)} cm²`;
+        $("formulaVolume").innerHTML = `V = A<sub>b</sub> × h = ${fmt(result.base)} × ${fmt(h)} = ${fmt(result.volume)} cm³`;
+        $("formulaSurface").innerHTML = `A<sub>t</sub> = 2(${fmt(l)}×${fmt(w)} + ${fmt(l)}×${fmt(h)} + ${fmt(w)}×${fmt(h)})`;
+      }
+      $("formulaSurfaceResult").textContent = `= ${fmt(result.surface)} cm²`;
       renderPrism(); renderNet();
     }
-
     /* ---------- Actividad y gamificación ---------- */
     function makeChallenge() {
       const difficulty = $("difficulty").value;
@@ -539,18 +631,27 @@
       const a = Math.ceil(Math.random() * (max - 2)) + 2;
       const b = Math.ceil(Math.random() * (max - 2)) + 2;
       const c = Math.ceil(Math.random() * (max - 2)) + 2;
-      const type = difficulty === "easy" || Math.random() < .65 ? "volume" : "area";
-      const answer = type === "volume" ? a * b * c : 2 * (a * b + a * c + b * c);
-      state.challenge = { a, b, c, type, answer };
-      $("answerUnit").value = type;
-      $("challengeText").textContent = type === "volume"
-        ? `Calcula el volumen de un prisma de ${a} cm × ${b} cm × ${c} cm.`
-        : `Calcula el área total de un prisma de ${a} cm × ${b} cm × ${c} cm.`;
+      const answerKind = difficulty === "easy" || Math.random() < .65 ? "volume" : "area";
+      const result = calculateGeometry(a, b, c);
+      state.challenge = { a, b, c, answerKind, answer: answerKind === "volume" ? result.volume : result.surface };
+      $("answerUnit").value = answerKind;
+      if (state.prismType === "triangular") {
+        $("challengeText").textContent = answerKind === "volume"
+          ? `Calcula el volumen de un prisma triangular con base ${a} cm, altura de base ${b} cm y longitud ${c} cm.`
+          : `Calcula el área total de un prisma triangular con base ${a} cm, altura de base ${b} cm y longitud ${c} cm.`;
+      } else if (state.prismType === "pentagonal") {
+        $("challengeText").textContent = answerKind === "volume"
+          ? `Calcula el volumen de un prisma pentagonal regular con lado ${a} cm, apotema ${b} cm y altura ${c} cm.`
+          : `Calcula el área total de un prisma pentagonal regular con lado ${a} cm, apotema ${b} cm y altura ${c} cm.`;
+      } else {
+        $("challengeText").textContent = answerKind === "volume"
+          ? `Calcula el volumen de un prisma de ${a} cm × ${b} cm × ${c} cm.`
+          : `Calcula el área total de un prisma de ${a} cm × ${b} cm × ${c} cm.`;
+      }
       $("answerInput").value = "";
       $("feedback").textContent = "";
       $("feedback").className = "feedback";
     }
-
     function checkAnswer() {
       const value = parseFloat($("answerInput").value);
       const unit = $("answerUnit").value;
@@ -560,24 +661,28 @@
         $("feedback").className = "feedback bad";
         return;
       }
-      if (unit !== challenge.type) {
-        $("feedback").textContent = "Revisa la unidad: este reto pide " + (challenge.type === "volume" ? "volumen (cm³)." : "área total (cm²).");
+      if (unit !== challenge.answerKind) {
+        $("feedback").textContent = "Revisa la unidad: este reto pide " + (challenge.answerKind === "volume" ? "volumen (cm³)." : "área total (cm²).");
         $("feedback").className = "feedback bad";
         return;
       }
       if (Math.abs(value - challenge.answer) < .01) {
         const points = $("difficulty").value === "easy" ? 25 : $("difficulty").value === "medium" ? 40 : 60;
         state.score += points;
-        $("feedback").textContent = `¡Excelente! ${challenge.type === "volume" ? "Multiplicaste base × altura." : "Sumaste las seis caras."} +${points} puntos.`;
+        $("feedback").textContent = `¡Excelente! ${challenge.answerKind === "volume" ? "Calculaste área de base × altura." : "Sumaste las bases y las caras laterales."} +${points} puntos.`;
         $("feedback").className = "feedback good";
         updateScore();
         setTimeout(makeChallenge, 900);
       } else {
-        $("feedback").textContent = "Aún no. Pista: " + (challenge.type === "volume" ? "multiplica las tres dimensiones." : "usa 2(la + lh + ah).");
+        const hint = state.prismType === "triangular"
+          ? (challenge.answerKind === "volume" ? "calcula primero b×hᵦ÷2." : "usa 2Aᵦ + Pᵦ×H.")
+          : state.prismType === "pentagonal"
+            ? (challenge.answerKind === "volume" ? "calcula primero (5×s×a)÷2." : "usa 2Aᵦ + (5s)×H.")
+            : (challenge.answerKind === "volume" ? "multiplica las tres dimensiones." : "usa 2(la + lh + ah).");
+        $("feedback").textContent = "Aún no. Pista: " + hint;
         $("feedback").className = "feedback bad";
       }
     }
-
     function updateScore() {
       const score = state.score;
       $("scoreValue").textContent = score;
@@ -588,9 +693,19 @@
       $("badge2").classList.toggle("unlocked", score >= 100);
       $("badge3").classList.toggle("unlocked", score >= 150);
     }
-
     /* ---------- Eventos ---------- */
     ["length", "width", "height"].forEach(bindDimension);
+    $("prismType").addEventListener("change", () => {
+      state.prismType = $("prismType").value;
+      [state.length, state.width, state.height] = prismInfo[state.prismType].defaults;
+      ["length", "width", "height"].forEach(name => {
+        $(`${name}Range`).value = state[name];
+        $(`${name}Number`).value = state[name];
+      });
+      updateTypeUI();
+      render();
+      makeChallenge();
+    });
     document.querySelectorAll("[data-preset]").forEach(button => {
       button.addEventListener("click", () => {
         const [l, w, h] = button.dataset.preset.split(",").map(Number);
@@ -606,23 +721,28 @@
     $("answerInput").addEventListener("keydown", (event) => { if (event.key === "Enter") checkAnswer(); });
     $("difficulty").addEventListener("change", makeChallenge);
     $("resetBtn").addEventListener("click", () => {
-      state.length = 6; state.width = 4; state.height = 5; state.score = 0;
+      state.prismType = "rectangular"; state.length = 6; state.width = 4; state.height = 5; state.score = 0;
+      $("prismType").value = state.prismType;
       ["length", "width", "height"].forEach(name => { $(`${name}Range`).value = state[name]; $(`${name}Number`).value = state[name]; });
-      render(); updateScore(); makeChallenge();
+      updateTypeUI(); render(); updateScore(); makeChallenge();
     });
-
     // Pista contextual: cambia según el volumen actual del simulador.
     $("hintBtn").addEventListener("click", () => {
-      const volume = state.length * state.width * state.height;
-      $("modalText").textContent = `Observa el prisma actual: su volumen es ${fmt(volume)} cm³. Para cualquier prisma rectangular, multiplica largo × ancho × altura.`;
+      const result = calculateGeometry(state.length, state.width, state.height);
+      const tip = state.prismType === "triangular"
+        ? "En la base triangular, calcula (base × altura) ÷ 2."
+        : state.prismType === "pentagonal"
+          ? "En la base pentagonal regular, calcula (perímetro × apotema) ÷ 2."
+          : "En la base rectangular, multiplica largo × ancho.";
+      $("modalText").textContent = `El volumen actual es ${fmt(result.volume)} cm³. ${tip} Después, multiplica el área de la base por la altura del prisma.`;
       $("modalBackdrop").classList.add("open");
       $("closeModal").focus();
     });
     $("closeModal").addEventListener("click", () => $("modalBackdrop").classList.remove("open"));
     $("modalBackdrop").addEventListener("click", (event) => { if (event.target === $("modalBackdrop")) $("modalBackdrop").classList.remove("open"); });
     document.addEventListener("keydown", (event) => { if (event.key === "Escape") $("modalBackdrop").classList.remove("open"); });
-
     // Primer renderizado.
+    updateTypeUI();
     render();
     makeChallenge();
     updateScore();
